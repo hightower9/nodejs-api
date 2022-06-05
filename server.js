@@ -1,4 +1,5 @@
 const http = require('http');
+const dotenv = require('dotenv').config()
 const { getProducts, getProduct, createProduct, updateProduct, deleteProduct } = require('./controllers/productController');
 
 const PORT = process.env.PORT || 5000;
